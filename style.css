@@ -1,8 +1,11 @@
+body{
+    color: white;
+}
 ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
 }
 
@@ -38,4 +41,66 @@ body{
 
 h1{
     color: white;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    border-top: 2px solid #A59E90;
+    border-bottom: 2px solid #A59E90;
+    background-image: url("back2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+.hero-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+p{
+    padding-right: 170px;
+    color: grey;
+    font-size: small;
+
+}
+
+i{
+    color: #A59E90;
+}
+
+.mypic{
+    width: 350px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: fill;
+    background-color: #A59E90;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 150px;
+}
+
+img{
+    width: 210px;
+    height: 320px;
+    border-radius: 30%;
+    margin-left: 70px;
+}
+
+@media only screen and (max-width: 1315px){
+    .hero{
+        justify-content: center;
+    }
+    .pic{
+        margin-left: 200px;
+    }
 }
