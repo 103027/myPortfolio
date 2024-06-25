@@ -5,6 +5,7 @@ body{
 .home{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 ul{
     list-style-type: none;
@@ -204,10 +205,10 @@ img{
 }
 
 .projects{
-    background-image: url("back2.webp");
+    /* background-image: url("back2.webp"); */
     width: 100%;
-    border-top: 2px solid #A59E90;
-    border-bottom: 2px solid #A59E90;
+    /* border-top: 2px solid #A59E90; */
+    /* border-bottom: 2px solid #A59E90; */
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 30px;
@@ -215,19 +216,25 @@ img{
 
 button{
     width: 80%; 
-    height: 25px;
+    height: 35px;
     color: #2D2D2D;
     background-color: #A59E90;
     border: 2px solid #A59E90;
+    border-radius: 20px;
     margin-top: auto;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px black;
 }
 
 .boxes-projects{
     display: grid;
     grid-template-columns: repeat(2,auto);
-    column-gap: 20px;
+    column-gap: 30px;
     row-gap: 30px;
-    padding: 20px;
+    padding: 20px 100px;
     margin: 0px 50px;
 }
 
@@ -236,6 +243,7 @@ button{
     flex-direction: column;
     align-items: center;
     border: 2px solid black;
+    border-radius: 20px;
     padding: 20px;
     background-color: #2D2D2D;
 }
@@ -245,8 +253,14 @@ button{
     padding: 0px 20px;
 }
 
+.box-projects h4{
+    margin-right: auto;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
 .box-projects ul{
-    list-style-type: circle;
+    list-style-type: none;
     color: #A59E90;
     display: grid;
     grid-template-columns: auto auto auto;
