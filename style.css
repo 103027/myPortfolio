@@ -96,18 +96,10 @@ i{
 
 img{
     width: 210px;
-    height: 320px;
+    height: 230px;
     border-radius: 30%;
     margin-left: 70px;
-}
-
-@media only screen and (max-width: 1315px){
-    .hero{
-        justify-content: center;
-    }
-    .pic{
-        margin-left: 200px;
-    }
+    margin-top: 85px;
 }
 
 .about{
@@ -150,7 +142,7 @@ img{
     padding-bottom: 20px;
 }
 
-.interests h1 , .skills h1{
+.interests h1 , .skills h1 , .projects h1{
     text-align: center;
 }
 
@@ -209,4 +201,70 @@ img{
 
 .box-interests h3{
     color: #2D2D2D;
+}
+
+.projects{
+    background-image: url("back2.webp");
+    width: 100%;
+    border-top: 2px solid #A59E90;
+    border-bottom: 2px solid #A59E90;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+button{
+    width: 80%; 
+    height: 25px;
+    color: #2D2D2D;
+    background-color: #A59E90;
+    border: 2px solid #A59E90;
+    margin-top: auto;
+}
+
+.boxes-projects{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    column-gap: 20px;
+    row-gap: 30px;
+    padding: 20px;
+    margin: 0px 50px;
+}
+
+.box-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #2D2D2D;
+}
+
+.box-projects p{
+    color: #A59E90;
+    padding: 0px 20px;
+}
+
+.box-projects ul{
+    list-style-type: circle;
+    color: #A59E90;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+
+.box-projects li{
+    padding: 5px;
+}
+
+@media only screen and (max-width: 1315px){
+    .hero{
+        justify-content: center;
+    }
+    .pic{
+        margin-left: 200px;
+    }
+    .boxes{
+        grid-template-columns: repeat(1,auto);
+    }
 }
