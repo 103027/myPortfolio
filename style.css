@@ -1,6 +1,11 @@
 body{
     color: white;
 }
+
+.home{
+    display: flex;
+    flex-direction: column;
+}
 ul{
     list-style-type: none;
     display: flex;
@@ -49,7 +54,7 @@ h1{
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     border-top: 2px solid #A59E90;
     border-bottom: 2px solid #A59E90;
     background-image: url("back2.webp");
@@ -67,7 +72,7 @@ h1{
     margin-left: 150px;
 }
 
-p{
+.hero-content p{
     padding-right: 170px;
     color: grey;
     font-size: small;
@@ -103,4 +108,105 @@ img{
     .pic{
         margin-left: 200px;
     }
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.about_me{
+    background-color: #2D2D2D;
+    border: 2px solid #726D63;
+    border-radius: 20px;
+    margin: 50px 150px;
+    text-align: center;
+}
+
+.about_me h1{
+    padding-top: 20px;
+}
+
+.about_me p{
+    padding: 0px 150px;
+    color: #A59E90;
+    padding-bottom: 20px;
+}
+
+.interests{
+    background-color: #2D2D2D;
+    margin: 0px 150px;
+    border: 2px solid #726D63;
+    border-radius: 20px;
+}
+
+.skills{
+    background-color: #2D2D2D;
+    margin: 50px 150px;
+    border: 2px solid #726D63;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.interests h1 , .skills h1{
+    text-align: center;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    margin: 0px 50px;
+}
+
+.box{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px 5px;
+    background-color: #A59E90;
+}
+
+.box p{
+    color:black;
+    padding: 0px 5px;
+}
+
+.box h3{
+    color: #2D2D2D;
+}
+
+.box img{
+    width: 100px;
+    height: 100px;
+    margin-right: 70px;
+}
+
+.boxes-interests{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 50px;
+    margin-bottom: 20px;
+}
+
+.box-interests{
+    border: 2px solid black;
+    background-color: #A59E90;
+    margin: 10px 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 50px;
+}
+
+.box-interests p{
+    color: black;
+}
+
+.box-interests h3{
+    color: #2D2D2D;
 }
