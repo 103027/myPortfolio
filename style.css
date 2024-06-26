@@ -6,6 +6,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(back3.png.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
 }
 ul{
     list-style-type: none;
@@ -107,7 +111,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .about_me{
@@ -164,6 +168,10 @@ img{
     background-color: #A59E90;
 }
 
+.box:hover{
+    transform: rotate(3deg);
+}
+
 .box p{
     color:black;
     padding: 0px 5px;
@@ -194,6 +202,18 @@ img{
     border: 2px solid black;
     border-radius: 20px;
     padding: 10px 50px;
+}
+
+.box-interests:hover{
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    transform: scale(1,1.1);
+}
+
+@keyframes example{
+    0%{box-shadow: none;}
+    100%{box-shadow: 5px 5px 5px 5px #726D63;}
 }
 
 .box-interests p{
@@ -271,6 +291,116 @@ button:hover{
     padding: 5px;
 }
 
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #2D2D2D;
+    border-top: 2px solid #A59E90;
+    padding-bottom: 20px;
+    /* border-radius: 20px; */
+}
+
+.my-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    margin: 30px;
+    padding-left: 80px;
+}
+
+.contact-info{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-info > i{
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+.contact-info > h3{
+    margin-left: 15px;
+}
+
+.contact-info > p{
+    margin-left: 15px;
+}
+
+.send-message{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+}
+
+.send-message h3{
+    text-align: center;
+    width: 100%;
+}
+
+input[id="name"],input[id="phone"] {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px 5px;
+    width: 40%;
+}
+
+input[id="email"],input[id="subject"] {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px 5px;
+    width: 84%;
+}
+
+input{
+    margin: 10px;
+    background-color: #CFCFCF;
+}
+
+::placeholder{
+    color: black;
+}
+
+textarea{
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    background-color: #CFCFCF;
+    width: 84%;
+}
+
+.button-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+.button-contact button{
+    width: 20%;    
+    height: 90%;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
 @media only screen and (max-width: 1315px){
     .hero{
         justify-content: center;
@@ -278,7 +408,10 @@ button:hover{
     .pic{
         margin-left: 200px;
     }
-    .boxes{
+    .boxes,.boxes-projects{
         grid-template-columns: repeat(1,auto);
+    }
+    input[id="name"],input[id="phone"] {
+        width: 84%;
     }
 }
