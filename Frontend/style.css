@@ -339,7 +339,7 @@ button:hover{
     margin-left: 15px;
 }
 
-.send-message{
+form{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -347,7 +347,7 @@ button:hover{
     width: 700px;
 }
 
-.send-message h3{
+form h3{
     text-align: center;
     width: 100%;
 }
@@ -399,6 +399,10 @@ textarea{
     margin-left: 50px;
     margin-top: 20px;
     border-radius: 20px;
+}
+
+p[id="error"]{
+    color:red;
 }
 
 @media only screen and (max-width: 1315px){
